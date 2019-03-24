@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start" color="primary">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+  
+      <ion-buttons slot="end">
+        <ion-button (click)="logout()">
+          <ion-icon slot="icon-only" name="log-out"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+  
+      <ion-title>My CV</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+  
+    <ion-card>
+          <img src="/src/assets/img/CV.jpg" />
+    </ion-card>
+  
+    <ion-tabs>
+      <ion-tab-bar slot="bottom" color="primary">
+  
+        <ion-tab-button tab="about">
+          <ion-icon name="information-circle-outline"></ion-icon>
+          <ion-label>About</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button tab="mycv">
+          <ion-icon name="locate"></ion-icon>
+          <ion-label>My CV</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button tab="project">
+          <ion-icon name="checkbox-outline"></ion-icon>
+          <ion-label>Project</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button tab="extra">
+          <ion-icon name="add-circle-outline"></ion-icon>
+          <ion-label>Extra</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button tab="contacts">
+          <ion-icon name="happy"></ion-icon>
+          <ion-label>Contact</ion-label>
+        </ion-tab-button>
+  
+      </ion-tab-bar>
+    </ion-tabs>
+  
+  </ion-content>
